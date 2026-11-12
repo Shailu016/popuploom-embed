@@ -1,0 +1,46 @@
+{
+  "name": "popuploom-embed",
+  "version": "1.0.0",
+  "description": "Dependency-free helpers for mounting a PopupLoom popup in vanilla, React, Vue and Astro sites.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./react": "./react/PopupLoom.jsx",
+    "./vue": "./vue/PopupLoom.vue",
+    "./astro": "./astro/PopupLoom.astro"
+  },
+  "files": [
+    "src",
+    "react",
+    "vue",
+    "astro",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/index.test.js"
+  },
+  "keywords": [
+    "popup",
+    "popup-builder",
+    "exit-intent",
+    "email-signup",
+    "lead-capture",
+    "astro",
+    "react",
+    "vue"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18",
+    "vue": ">=3"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "vue": { "optional": true }
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

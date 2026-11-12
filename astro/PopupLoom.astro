@@ -1,0 +1,14 @@
+---
+// Astro component. The runtime is external, so is:inline prevents Astro from
+// trying to bundle or rewrite the script.
+import { RUNTIME_URL, WIDGET_ID_PATTERN } from "../src/index.js";
+
+const { widgetId, scriptSrc = RUNTIME_URL } = Astro.props;
+
+if (!WIDGET_ID_PATTERN.test(widgetId)) {
+  throw new Error("widgetId must look like wan_0123456789abcdef");
+}
+---
+
+<div data-popuploom={widgetId}></div>
+<script is:inline src={scriptSrc} defer></script>
