@@ -2,6 +2,14 @@
   "name": "popuploom-embed",
   "version": "1.0.0",
   "description": "Dependency-free helpers for mounting a PopupLoom popup in vanilla, React, Vue and Astro sites.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shailu016/popuploom-embed.git"
+  },
+  "homepage": "https://popuploom.com/guides/install-popups.html",
+  "bugs": {
+    "url": "https://github.com/Shailu016/popuploom-embed/issues"
+  },
   "type": "module",
   "main": "./src/index.js",
   "exports": {
